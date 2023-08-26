@@ -22,24 +22,6 @@
   "jest.autoRun": "off",
   "jest.jestCommandLine": "pnpm test --",
 
-  // Configure todo-tree to exclude node_modules, dist, and compiled.
-  "todo-tree.filtering.excludeGlobs": [
-    "**/node_modules",
-    "**/dist",
-    "**/compiled"
-  ],
-  // Match TODO-APP in addition to other TODOs.
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]",
-    "TODO-APP"
-  ],
-
   // Disable TypeScript surveys.
   "typescript.surveys.enabled": false,
 
