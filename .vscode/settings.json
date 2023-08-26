@@ -1,0 +1,55 @@
+{
+  // Formatting using Prettier by default for all languages
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Formatting using Prettier for JavaScript, overrides VSCode default.
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  // Linting using ESLint.
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // Disable Jest autoRun as otherwise it will start running all tests the first time.
+  "jest.autoRun": "off",
+  "jest.jestCommandLine": "pnpm test --",
+
+  // Configure todo-tree to exclude node_modules, dist, and compiled.
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules",
+    "**/dist",
+    "**/compiled"
+  ],
+  // Match TODO-APP in addition to other TODOs.
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "TODO-APP"
+  ],
+
+  // Disable TypeScript surveys.
+  "typescript.surveys.enabled": false,
+
+  // Compile rust-analyzer in a separate directory to avoid conflicts with the main project.
+  "cSpell.words": [
+    "Entrypoints",
+    "nextjs",
+    "opentelemetry",
+    "pnpm",
+    "tailwindcss",
+    "Threadsafe"
+  ]
+}
